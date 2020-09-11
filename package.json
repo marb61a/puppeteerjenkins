@@ -1,16 +1,20 @@
 {
   "name": "PuppeteerJenkins",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000p\u0000u\u0000p\u0000p\u0000e\u0000t\u0000e\u0000e\u0000r\u0000j\u0000e\u0000n\u0000k\u0000i\u0000n\u0000s\u0000\r\u0000 \u0000",
+  "description": "CI / CD with Puppeteer and Jenkins",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "e2e-test": "./node_modules/mocha/bin/mocha --timeout=30000 ./tests/e2e.test.js",
+    "smoke-test": "./node_modules/mocha/bin/mocha --timeout=30000 ./tests/smoke.test.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marb61a/puppeteerjenkins.git"
   },
-  "keywords": [],
+  "keywords": [
+    "Puppeteer",
+    "Jenkins"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
